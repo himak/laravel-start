@@ -10,7 +10,8 @@ Defautl database is SQLite
 
 Run this command
 
-	php artisan migrate
+	cp .env.example .env
+    php artisan migrate
 	php artisan kye:generate
 
 ### After deploy on hosting
@@ -19,3 +20,8 @@ Set app to production mode and turn off debug mode in **.env**
 
 	APP_ENV=production
 	APP_DEBUG=false
+    
+## Git
+
+	git remote remove origin
+	git remote add origin URL_TO_YOUR_REPOSITORY
